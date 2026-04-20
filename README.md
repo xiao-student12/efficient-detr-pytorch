@@ -67,6 +67,17 @@ Bash
 python main.py --batch_size 2 --no_aux_loss --eval --resume /path/to/your/checkpoint.pth --coco_path /path/to/dataset
 🙏 Acknowledgements
 This project is built upon the official DETR repository by Facebook Research. We thank the original authors for their groundbreaking work on end-to-end object detection with Transformers.
+## 📑 Citation
 
+This repository contains the official code for our submission to ***The Visual Computer***. If you find our work, including the improved EfficientNet-B2 backbone, SimAM attention integration, or the optimized loss functions useful for your research, please consider citing our paper:
+
+```bibtex
+@article{58d969e4-5304-43d9-b6d2-9819011a0e3f,
+  title={ Heterogeneous Surface Defect Detection via Dual-Branch Transformer and Connected Component Analysis for Metallized Ceramic Rings},
+  author={YiSong Xiao , Xian Wang ,  YunLong Liu , TianLong Yang , LongTao Ma },
+  journal={The Visual Computer},
+  year={2026},
+  publisher={Springer}
+}
 📄 License
 This project is released under the Apache 2.0 license.
