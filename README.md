@@ -1,15 +1,14 @@
 # efficient-detr-pytorch
 An improved DETR model for MCR defect detection, featuring an EfficientNet-B2 backbone with SimAM attention and optimized loss functions (Smooth L1 + DIoU).
 # Improved DETR for MCR Defect Detection
-<img width="807" height="269" alt="image" src="https://github.com/user-attachments/assets/78d21bc1-4c61-4703-aaa7-67e8ad1ef179" />
-<img width="857" height="203" alt="image" src="https://github.com/user-attachments/assets/259c9d18-9c58-41e1-9458-b9308e711049" />
 
-
-
+[![PyTorch](https://img.shields.io/badge/PyTorch-v1.5+-EE4C2C.svg?logo=pytorch)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
 This repository contains the PyTorch implementation of an improved **DETR** (**DE**tection **TR**ansformer) model, specifically optimized for **MCR (Magnetic Controlled Reactor) defect detection**. 
 
 While the original DETR model achieves strong results on standard datasets, it faces challenges with small-sized targets, imbalanced classes, and limited sample volumes in industrial defect detection. To overcome these limitations, we propose an enhanced DETR architecture with a lightweight backbone, advanced attention mechanisms, and optimized loss functions.
+                                                                  <img width="807" height="269" alt="image" src="https://github.com/user-attachments/assets/d7cfddd7-4447-480f-93b0-f832ca292066" />
 
 ## 🚀 Key Improvements
 
@@ -18,7 +17,7 @@ While the original DETR model achieves strong results on standard datasets, it f
    
 2. **SimAM 3D Attention Mechanism**: 
    To better capture subtle object features, we replaced the original Squeeze-and-Excitation (SE) attention mechanism within the EfficientNet's MBConv modules with **SimAM** (a Simple, Parameter-Free Attention Module). SimAM evaluates the 3D weights of features, enhancing the model's sensitivity to defect details without adding extra parameters.
-<img width="857" height="203" alt="image" src="https://github.com/user-attachments/assets/0aaf48a3-0d51-4171-8484-7730639d2e23" />
+                               <img width="857" height="203" alt="image" src="https://github.com/user-attachments/assets/cc209691-b28c-453a-9379-b2f4eefc792f" />
 
 3. **Optimized Loss Functions**: 
    We upgraded the bounding box regression loss to improve localization precision and convergence speed. The standard L1 Loss and GIoU Loss have been replaced with a linear combination of **Smooth L1 Loss** and **DIoU (Distance-IoU) Loss**. DIoU directly minimizes the distance between the center points of the predicted and ground-truth boxes, leading to faster convergence and better handling of overlapping defects.
