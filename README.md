@@ -1,6 +1,8 @@
 # efficient-detr-pytorch
 An improved DETR model for MCR defect detection, featuring an EfficientNet-B2 backbone with SimAM attention and optimized loss functions (Smooth L1 + DIoU).
 # Improved DETR for MCR Defect Detection
+<img width="807" height="269" alt="image" src="https://github.com/user-attachments/assets/78d21bc1-4c61-4703-aaa7-67e8ad1ef179" />
+<img width="857" height="203" alt="image" src="https://github.com/user-attachments/assets/259c9d18-9c58-41e1-9458-b9308e711049" />
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-v1.5+-EE4C2C.svg?logo=pytorch)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
