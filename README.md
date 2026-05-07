@@ -75,9 +75,9 @@ This repository contains the official code for our submission to ***The Visual C
 @article{58d969e4-5304-43d9-b6d2-9819011a0e3f,
   title={ Heterogeneous Surface Defect Detection via Dual-Branch Transformer and Connected Component Analysis for Metallized Ceramic Rings},
   author={YiSong Xiao , Xian Wang ,  YunLong Liu , TianLong Yang , LongTao Ma },
-  journal={The Visual Computer},
-  year={2026},
-  publisher={Springer}
+  journal={},
+  year={},
+  publisher={}
 }
 📄 License
 This project is released under the Apache 2.0 license.
